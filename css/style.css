@@ -20,8 +20,16 @@
   }
 }
 
-body {
+body:not(.img) {
   background: var(--bg-main);
+}
+
+.img {
+  background: var(--bg-img);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 html,
@@ -53,6 +61,7 @@ a {
   color: var(--fg-dark);
   text-decoration: none;
   outline: none;
+  transition: 0.3s;
 }
 
 a:hover {
@@ -89,3 +98,16 @@ section:hover {
 }
 
 /* #endregion */
+
+button {
+  background-color: var(--bg-card);
+  color: var(--fg-dark);
+  margin: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--bg-shadow);
+  color: var(--fg-light);
+}
