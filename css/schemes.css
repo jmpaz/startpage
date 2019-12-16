@@ -1,10 +1,10 @@
-body.frost {
-  --bg-main: #5e81ac;
-  --bg-card: #81a1c1;
-  --bg-shadow: #88c0d0;
+.pastel {
+  --bg-main: #fcd3db;
+  --bg-card: #fcf8fa;
+  --bg-shadow: #ef939b;
 
-  --fg-dark: #2e3440;
-  --fg-light: #d8dee9;
+  --fg-dark: #ef939b;
+  --fg-light: #f7afb8;
 }
 
 body.img {

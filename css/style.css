@@ -1,15 +1,15 @@
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
   :root {
-    --bg-main: #fcd3db;
-    --bg-card: #fcf8fa;
-    --bg-shadow: #ef939b;
+    --bg-main: #5e81ac;
+    --bg-card: #81a1c1;
+    --bg-shadow: #88c0d0;
 
-    --fg-dark: #ef939b;
-    --fg-light: #f7afb8;
+    --fg-dark: #2e3440;
+    --fg-light: #d8dee9;
   }
 }
 
-@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-main: #232836;
     --bg-card: #282e3f;
