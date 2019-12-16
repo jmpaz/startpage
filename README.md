@@ -1,4 +1,4 @@
-# /r/startpages × /r/unixporn
+# **[WIP]** /r/startpages × /r/unixporn
 
 ## Source material/inspiration
 
@@ -21,5 +21,7 @@
 ## Roadmap
 
 - [x] Create plain default colorschemes
-- [ ] Add first dark/light image backgrounds with hardcoded custom colorschemes
-- [ ] Add other images
+- [x] Add first dark/light image backgrounds with hardcoded custom colorschemes
+- [ ] Theme picker
+- [ ] Additional themes
+- [ ] Clean up
