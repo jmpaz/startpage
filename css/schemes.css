@@ -1,0 +1,16 @@
+body.frost {
+  --bg-main: #5e81ac;
+  --bg-card: #81a1c1;
+  --bg-shadow: #88c0d0;
+
+  --fg-dark: #2e3440;
+  --fg-light: #d8dee9;
+}
+
+body.img {
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
