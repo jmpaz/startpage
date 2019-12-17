@@ -4,6 +4,10 @@
 
 const body = document.querySelector('body');
 
+document.querySelector('#default').addEventListener('click', () => {
+  body.className = '';
+});
+
 document.querySelector('#stone').addEventListener('click', () => {
   body.className = '';
   body.classList.add('stones');
