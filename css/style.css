@@ -2,10 +2,10 @@
   :root {
     --bg-main: #5e81ac;
     --bg-card: #81a1c1;
-    --bg-shadow: #88c0d0;
+    --bg-hover: #88c0d0;
 
-    --fg-dark: #2e3440;
-    --fg-light: #d8dee9;
+    --fg-main: #2e3440;
+    --fg-hover: #d8dee9;
   }
 }
 
@@ -13,10 +13,10 @@
   :root {
     --bg-main: #232836;
     --bg-card: #282e3f;
-    --bg-shadow: #2f364a;
+    --bg-hover: #2f364a;
 
-    --fg-dark: #8686a4;
-    --fg-light: #ccccfa;
+    --fg-main: #8686a4;
+    --fg-hover: #ccccfa;
   }
 }
 
@@ -58,14 +58,14 @@ main {
 
 a:visited,
 a {
-  color: var(--fg-dark);
+  color: var(--fg-main);
   text-decoration: none;
   outline: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: var(--fg-light);
+  color: var(--fg-hover);
 }
 
 main section {
@@ -94,20 +94,20 @@ section {
 }
 
 section:hover {
-  background-color: var(--bg-shadow);
+  background-color: var(--bg-hover);
 }
 
 /* #endregion */
 
 button {
   background-color: var(--bg-card);
-  color: var(--fg-dark);
+  color: var(--fg-main);
   margin: 8px;
   padding: 8px;
   border-radius: 4px;
 }
 
 button:hover {
-  background-color: var(--bg-shadow);
-  color: var(--fg-light);
+  background-color: var(--bg-hover);
+  color: var(--fg-hover);
 }

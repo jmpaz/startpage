@@ -3,10 +3,10 @@
 .pastel-placeholder {
   --bg-main: #fcd3db;
   --bg-card: #fcf8fa;
-  --bg-shadow: #ef939b;
+  --bg-hover: #ef939b;
 
-  --fg-dark: #ef939b;
-  --fg-light: #f7afb8;
+  --fg-main: #ef939b;
+  --fg-hover: #f7afb8;
 }
 
 /* with image: */
@@ -15,10 +15,10 @@
 
   --bg-main: #181c1f;
   --bg-card: #181c1f;
-  --bg-shadow: #15181b;
+  --bg-hover: #513e40;
 
-  --fg-dark: #8686a4;
-  --fg-light: #bdbad8;
+  --fg-main: #8686a4;
+  --fg-hover: #bdbad8;
 }
 
 .pastel {
@@ -26,8 +26,8 @@
 
   --bg-main: #fcd3db;
   --bg-card: #fcf8fa;
-  --bg-shadow: #ef939b;
+  --bg-hover: #e0edf5;
 
-  --fg-dark: #ef939b;
-  --fg-light: #f7afb8;
+  --fg-main: #ef939b;
+  --fg-hover: #f7afb8;
 }
