@@ -111,3 +111,33 @@ button:hover {
   background-color: var(--bg-hover);
   color: var(--fg-hover);
 }
+
+.ss-single-selected {
+  background-color: var(--bg-card) !important;
+  color: var(--fg-main) !important;
+  border: none !important;
+  /* width: 200px !important; */
+}
+
+.ss-optgroup-label {
+  background-color: var(--bg-card) !important;
+  color: var(--fg-main) !important;
+}
+
+.ss-content {
+  border: none !important;
+}
+
+.ss-option {
+  background-color: var(--bg-card) !important;
+  color: var(--fg-main) !important;
+}
+
+span.ss-disabled {
+  color: var(--fg-main) !important;
+}
+
+.ss-option:hover {
+  background-color: var(--bg-hover) !important;
+  color: var(--fg-hover) !important;
+}

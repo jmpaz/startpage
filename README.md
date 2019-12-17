@@ -23,6 +23,5 @@
 - [x] Create plain default colorschemes
 - [x] Add first dark/light image backgrounds with hardcoded custom colorschemes
 - [ ] Theme picker
-- [ ] Additional themes
+- [ ] Fetch lists of themes from themes.json
 - [ ] Mobile
-- [ ] Clean up

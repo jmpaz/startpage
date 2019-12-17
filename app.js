@@ -1,47 +1,68 @@
-// reference: set properties
-// document.documentElement.style.setProperty('--bg-img', `url(${src})`);
-// document.documentElement.style.setProperty('--bg-main', `#232836`);
-
+/* global SlimSelect */
 const body = document.querySelector('body');
 
-async function setTheme(theme) {
+async function setTheme(theme, isImgTheme = false) {
   const getScheme = async () => {
-    const response = await fetch(`../pywal/${theme}.json`);
+    const response = await fetch(`pywal/${theme}.json`);
     return await response.json();
   };
   const scheme = await getScheme().then(data => data);
-  const imgSrc = `url(images/${theme}.jpg)`;
 
   const colors = {
-    bgMain: scheme.colors.color0,
-    bgCard: scheme.special.background,
-    bgHover: scheme.colors.color5,
-    fgMain: scheme.special.foreground,
-    fgHover: scheme.colors.color0
+    bgMain: scheme['colors'].color0,
+    bgCard: scheme['special'].background,
+    bgHover: scheme['colors'].color5,
+    fgMain: scheme['special'].foreground,
+    fgHover: scheme['colors'].color0
   };
 
-  body.classList.add('img');
-  body.style.setProperty('background-image', imgSrc);
+  if (isImgTheme) {
+    const imgSrc = `url(images/${theme}.jpg)`;
+    body.classList.add('img');
+    body.style.setProperty('background-image', imgSrc);
+  }
+
   document.documentElement.style.setProperty('--bg-card', colors.bgCard);
   document.documentElement.style.setProperty('--bg-hover', colors.bgHover);
   document.documentElement.style.setProperty('--fg-main', colors.fgMain);
   document.documentElement.style.setProperty('--fg-hover', colors.fgHover);
 }
 
-document.querySelector('#default').addEventListener('click', () => {
-  body.className = '';
-  body.style = '';
-  document.documentElement.style = '';
-});
+new SlimSelect({
+  select: '#theme',
+  showSearch: false,
+  hideSelectedOption: true,
+  data: [
+    { placeholder: true, text: 'Select a theme...' },
+    { text: 'Default (system)', value: 'default' }, // regular option
+    {
+      label: 'Flat',
+      options: [
+        { class: 'flat', text: 'Mirage', value: 'mirage' },
+        { class: 'flat', text: 'Timbre', value: 'timbre' }
+      ]
+    },
+    {
+      label: 'Images',
+      options: [
+        { class: 'img', text: 'Stones', value: 'stones' },
+        { class: 'img', text: 'Pastel', value: 'pastel' }
+      ]
+    }
+  ],
+  onChange: selection => {
+    body.className = '';
+    body.style = '';
 
-document.querySelector('#pastel').addEventListener('click', () => {
-  body.className = '';
-  body.style = '';
-  setTheme('pastel');
-});
-
-document.querySelector('#stones').addEventListener('click', () => {
-  body.className = '';
-  body.style = '';
-  setTheme('stones');
+    switch (selection.class) {
+      case 'flat':
+        console.log('flat schemes not yet implemented');
+        break;
+      case 'img':
+        setTheme(selection.value, true);
+        break;
+      default:
+        document.documentElement.style = '';
+    }
+  }
 });
