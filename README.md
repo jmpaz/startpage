@@ -24,4 +24,5 @@
 - [x] Add first dark/light image backgrounds with hardcoded custom colorschemes
 - [ ] Theme picker
 - [ ] Additional themes
+- [ ] Mobile
 - [ ] Clean up
