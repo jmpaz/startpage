@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: light) {
   :root {
     --bg-main: #5e81ac;
     --bg-card: #81a1c1;
@@ -9,7 +9,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
   :root {
     --bg-main: #232836;
     --bg-card: #282e3f;
@@ -25,7 +25,7 @@ body:not(.img) {
 }
 
 .img {
-  background: var(--bg-img);
+  /* background: var(--bg-img); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
