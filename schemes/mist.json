@@ -1,0 +1,26 @@
+{
+  "name": "Mist",
+  "special": {
+    "background": "#12181D",
+    "foreground": "#D4D4D4",
+    "cursor": "#D4D4D4"
+  },
+  "colors": {
+    "color0": "#3E444A",
+    "color1": "#917070",
+    "color2": "#798183",
+    "color3": "#82817E",
+    "color4": "#6D6E75",
+    "color5": "#96858D",
+    "color6": "#949AA9",
+    "color7": "#D4D4D4",
+    "color8": "#3E444A",
+    "color9": "#917070",
+    "color10": "#798183",
+    "color11": "#82817E",
+    "color12": "#6D6E75",
+    "color13": "#96858D",
+    "color14": "#949AA9",
+    "color15": "#D4D4D4"
+  }
+}

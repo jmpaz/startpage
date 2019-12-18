@@ -3,18 +3,11 @@ const body = document.querySelector('body');
 
 async function setTheme(theme, isImgTheme = false) {
   const getScheme = async () => {
-    const response = await fetch(`pywal/${theme}.json`);
+    const response = await fetch(`schemes/${theme}.json`);
     return await response.json();
   };
   const scheme = await getScheme().then(data => data);
-
-  const colors = {
-    bgMain: scheme['colors'].color0,
-    bgCard: scheme['special'].background,
-    bgHover: scheme['colors'].color5,
-    fgMain: scheme['special'].foreground,
-    fgHover: scheme['colors'].color0
-  };
+  const [colors, special] = [scheme.colors, scheme.special];
 
   if (isImgTheme) {
     const imgSrc = `url(images/${theme}.jpg)`;
@@ -22,10 +15,11 @@ async function setTheme(theme, isImgTheme = false) {
     body.style.setProperty('background-image', imgSrc);
   }
 
-  document.documentElement.style.setProperty('--bg-card', colors.bgCard);
-  document.documentElement.style.setProperty('--bg-hover', colors.bgHover);
-  document.documentElement.style.setProperty('--fg-main', colors.fgMain);
-  document.documentElement.style.setProperty('--fg-hover', colors.fgHover);
+  document.documentElement.style.setProperty('--bg-main', colors.color0);
+  document.documentElement.style.setProperty('--bg-card', special.background);
+  document.documentElement.style.setProperty('--bg-hover', colors.color5);
+  document.documentElement.style.setProperty('--fg-main', special.foreground);
+  document.documentElement.style.setProperty('--fg-hover', colors.color0);
 }
 
 new SlimSelect({
@@ -38,13 +32,14 @@ new SlimSelect({
     {
       label: 'Flat',
       options: [
-        { class: 'flat', text: 'Mirage', value: 'mirage' },
-        { class: 'flat', text: 'Timbre', value: 'timbre' }
+        { class: 'flat', text: 'Ayu Mirage', value: 'ayu-mirage' },
+        { class: 'flat', text: 'Lakeside', value: 'lakeside' }
       ]
     },
     {
       label: 'Images',
       options: [
+        { class: 'img', text: 'Mist', value: 'mist' },
         { class: 'img', text: 'Stones', value: 'stones' },
         { class: 'img', text: 'Pastel', value: 'pastel' }
       ]
@@ -56,7 +51,7 @@ new SlimSelect({
 
     switch (selection.class) {
       case 'flat':
-        console.log('flat schemes not yet implemented');
+        setTheme(selection.value);
         break;
       case 'img':
         setTheme(selection.value, true);
