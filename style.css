@@ -1,11 +1,11 @@
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-main: #5e81ac;
-    --bg-card: #81a1c1;
-    --bg-hover: #88c0d0;
+    --bg-main: #eff2f5;
+    --bg-card: #e4e8f2;
+    --bg-hover: #d8dde7;
 
     --fg-main: #2e3440;
-    --fg-hover: #d8dee9;
+    --fg-hover: #9dc2f6;
   }
 }
 
