@@ -35,7 +35,7 @@ body:not(.img) {
 html,
 body {
   font-size: 18px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* #region Jazz */
@@ -116,7 +116,14 @@ button:hover {
   background-color: var(--bg-card) !important;
   color: var(--fg-main) !important;
   border: none !important;
-  /* width: 200px !important; */
+  /* width: fit-content !important; */
+  /* font-size: small; */
+}
+
+.ss-content {
+  border: none !important;
+  /* width: fit-content !important; */
+  /* font-size: small; */
 }
 
 .ss-optgroup-label {
@@ -124,16 +131,12 @@ button:hover {
   color: var(--fg-main) !important;
 }
 
-.ss-content {
-  border: none !important;
-}
-
 .ss-option {
   background-color: var(--bg-card) !important;
   color: var(--fg-main) !important;
 }
 
-span.ss-disabled {
+.ss-disabled {
   color: var(--fg-main) !important;
 }
 
