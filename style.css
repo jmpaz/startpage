@@ -25,7 +25,6 @@ body:not(.img) {
 }
 
 .img {
-  /* background: var(--bg-img); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -99,18 +98,9 @@ section:hover {
 
 /* #endregion */
 
-button {
-  background-color: var(--bg-card);
-  color: var(--fg-main);
-  margin: 8px;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: var(--bg-hover);
-  color: var(--fg-hover);
-}
+/* #region Slim Select */
+/* TODO consider simplifying with .ss-bg/.ss-fg classes?  */
+/* "inherits any classes that were added to the original select element. This includes options as well." */
 
 .ss-single-selected {
   background-color: var(--bg-card) !important;
@@ -144,3 +134,5 @@ button:hover {
   background-color: var(--bg-hover) !important;
   color: var(--fg-hover) !important;
 }
+
+/* #endregion */
