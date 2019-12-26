@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/mnt/c/Users/Josh/Documents/Code/Projects/startpage/images/field.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#fafbfa",
+        "foreground": "#241D1A",
+        "cursor": "#241D1A"
+    },
+    "colors": {
+        "color0": "#fafbfa",
+        "color1": "#B7855D",
+        "color2": "#D59866",
+        "color3": "#53768E",
+        "color4": "#7093A5",
+        "color5": "#92ABB4",
+        "color6": "#B6BEB6",
+        "color7": "#241D1A",
+        "color8": "#888987",
+        "color9": "#B7855D",
+        "color10": "#D59866",
+        "color11": "#53768E",
+        "color12": "#7093A5",
+        "color13": "#92ABB4",
+        "color14": "#B6BEB6",
+        "color15": "#241D1A"
+    }
+}

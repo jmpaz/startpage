@@ -36,6 +36,7 @@ const dropdownData = [
   {
     label: 'Images',
     options: [
+      { class: 'img', text: 'Field', value: 'field' },
       { class: 'img', text: 'Mist', value: 'mist' },
       { class: 'img', text: 'Stones', value: 'stones' },
       { class: 'img', text: 'Pastel', value: 'pastel' }
