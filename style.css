@@ -34,66 +34,21 @@ body:not(.img) {
 html,
 body {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Consolas', monospace;
 }
 
-/* #region Jazz */
-main {
-  margin-top: auto;
-  display: flex;
-  overflow-y: auto;
-  flex-flow: row wrap;
-  width: 380px;
-  position: relative;
-  top: -10px;
+/* #region Grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 12em 1em;
+  grid-template-rows: 1em 1fr;
 }
 
-.links {
-  padding: 5px 15px;
-  width: auto;
-  display: block;
-  text-align: center;
-}
-
-a:visited,
-a {
-  color: var(--fg-main);
-  text-decoration: none;
-  outline: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: var(--fg-hover);
-}
-
-main section {
-  flex: 1 1 25%;
-  box-sizing: border-box;
-}
-
-.title {
-  display: none;
-}
-
-body {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-section {
-  margin: 12px;
-  padding: 12px;
-  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.13);
-
-  background-color: var(--bg-card);
-  border-radius: 4px;
-}
-
-section:hover {
-  background-color: var(--bg-hover);
+#theme,
+.ss-main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 /* #endregion */
@@ -103,11 +58,23 @@ section:hover {
 /* "inherits any classes that were added to the original select element. This includes options as well." */
 
 .ss-single-selected {
+  background-color: var(--bg-hover) !important;
+  color: var(--fg-main) !important;
+  border: none !important;
+  /* width: fit-content !important; */
+  /* font-size: small; */
+}
+
+.ss-single-selected:hover {
   background-color: var(--bg-card) !important;
   color: var(--fg-main) !important;
   border: none !important;
   /* width: fit-content !important; */
   /* font-size: small; */
+}
+
+.ss-open-below {
+  background-color: var(--bg-card) !important;
 }
 
 .ss-content {
