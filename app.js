@@ -24,7 +24,7 @@ const setTheme = async (theme, isImgTheme = false) => {
 };
 
 const dropdownData = [
-  { placeholder: true, text: 'Select a theme...' },
+  { placeholder: true, text: 'Theme' },
   { text: 'Default (system)', value: 'default' }, // regular option
   {
     label: 'Flat',

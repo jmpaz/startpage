@@ -25,7 +25,8 @@
 - [x] Add first dark/light image backgrounds with hardcoded custom colorschemes
 - [x] Theme picker
 - [ ] Redo HTML
-- [ ] Improve color choices (maybe disable card hover, possibly on a per-theme basis)
+- [ ] Improve color choices
+- [ ] Transparency
 - [ ] Fetch lists of themes from themes.json
 - [ ] Mobile
 

@@ -33,25 +33,35 @@ body:not(.img) {
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-family: 'Consolas', monospace;
 }
 
-/* #region Grid */
+* {
+  box-sizing: border-box;
+}
 
 .container {
+  padding: 1em 1em;
+  height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 12em 1em;
-  grid-template-rows: 1em 1fr;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 #theme,
 .ss-main {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  max-width: 100%;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  /* grid-column: -3 / span 2; */
+  /* grid-row: 1; */
 }
-
-/* #endregion */
 
 /* #region Slim Select */
 /* TODO consider simplifying with .ss-bg/.ss-fg classes?  */
