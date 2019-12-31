@@ -25,6 +25,8 @@
 - [x] Add first dark/light image backgrounds with hardcoded custom colorschemes
 - [x] Theme picker
 - [ ] Redo HTML
+  - [ ] links.json
+  - [ ] Collapsible categories
 - [ ] Improve color choices
 - [ ] Preferences
 - [ ] Wallpaper blur
