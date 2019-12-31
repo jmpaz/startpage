@@ -5,7 +5,7 @@
 /r/startpages
 
 - [jazz](https://old.reddit.com/r/startpages/comments/czksma/ya_like_jazz_minimalism/)
-- [minimal start](https://github.com/0xhjohnson/minimal-start)
+- [minimal nord](https://github.com/0xhjohnson/minimal-start)
 - [pixely startpage](https://wolverine1621.github.io/startpage/)
 - [dawn](https://0-l.github.io/dawn/)
 
@@ -26,6 +26,8 @@
 - [x] Theme picker
 - [ ] Redo HTML
 - [ ] Improve color choices
+- [ ] Preferences
+- [ ] Wallpaper blur
 - [ ] Transparency
 - [ ] Fetch lists of themes from themes.json
 - [ ] Mobile
