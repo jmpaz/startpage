@@ -6,7 +6,6 @@
 
 - [jazz](https://old.reddit.com/r/startpages/comments/czksma/ya_like_jazz_minimalism/)
 - [minimal start](https://github.com/0xhjohnson/minimal-start)
-- [pastels](https://old.reddit.com/r/unixporn/comments/cxxjx1/openbox_switch_back_to_archopenbox_from/)
 - [pixely startpage](https://wolverine1621.github.io/startpage/)
 - [dawn](https://0-l.github.io/dawn/)
 
@@ -17,6 +16,7 @@
 - [XFCE's not ugly, /u/IComplimentVehicles](https://old.reddit.com/r/desktops/comments/a1zi9n/i_get_irrationally_angry_when_someone_says_xfce/)
 - [Skin Against Skin, /u/s0la90](https://old.reddit.com/r/unixporn/comments/dvsz0n/openbox_orw_skin_against_skin/)
 - [...And Justice For All, /u/addy-fe](https://old.reddit.com/r/unixart/comments/850jjn/xfwm_and_justice_for_all/)
+- [pastels](https://old.reddit.com/r/unixporn/comments/cxxjx1/openbox_switch_back_to_archopenbox_from/)
 - [🌒, /u/otto251](https://old.reddit.com/r/desktops/comments/bfjikp/xfce4/)
 
 ## Roadmap
@@ -33,3 +33,4 @@
 ## Maybe add
 
 - [ ] Subtle link to source post
+- [ ] Custom themes with easy import
