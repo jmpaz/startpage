@@ -6,7 +6,8 @@
 
 - [jazz](https://old.reddit.com/r/startpages/comments/czksma/ya_like_jazz_minimalism/)
 - [minimal nord](https://github.com/0xhjohnson/minimal-start)
-- [pixely startpage](https://wolverine1621.github.io/startpage/)
+- [pixely](https://wolverine1621.github.io/startpage/)
+- [simple](https://old.reddit.com/r/startpages/comments/dxswbf/my_simple_start_page/)
 - [dawn](https://0-l.github.io/dawn/)
 
 /r/unixporn (and more)

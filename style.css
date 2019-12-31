@@ -63,6 +63,34 @@ body {
   /* grid-row: 1; */
 }
 
+#links {
+  grid-column: 2 / 6;
+  grid-row: 2 / 5;
+}
+
+section {
+  display: inline-block;
+  background-color: var(--bg-hover);
+  padding: 0em 0.5em;
+  border-radius: 0.2em;
+}
+
+a:visited,
+a {
+  color: var(--fg-main);
+  text-decoration: none;
+  outline: none;
+}
+
+.la,
+.lab,
+.lad,
+.lal,
+.lar,
+.las {
+  padding-right: 0.3em;
+}
+
 /* #region Slim Select */
 /* TODO consider simplifying with .ss-bg/.ss-fg classes?  */
 /* "inherits any classes that were added to the original select element. This includes options as well." */
