@@ -20,6 +20,15 @@
   }
 }
 
+.themed {
+  --bg-main: var(--color0);
+  --bg-card: var(--background);
+  --bg-hover: var(--color5);
+
+  --fg-main: var(--foreground);
+  --fg-hover: var(--color0);
+}
+
 body:not(.img) {
   background: var(--bg-main);
 }
@@ -70,7 +79,8 @@ body {
 
 section {
   display: inline-block;
-  background-color: var(--bg-hover);
+  --bg-hovers: var(--bg-hover);
+  background-color: var(--bg-hovers);
   padding: 0em 0.5em;
   border-radius: 0.2em;
 }

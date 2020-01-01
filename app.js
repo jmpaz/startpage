@@ -16,11 +16,12 @@ const setTheme = async (theme, isImgTheme = false) => {
     body.style.setProperty('background-image', imgSrc);
   }
 
-  document.documentElement.style.setProperty('--bg-main', colors.color0);
-  document.documentElement.style.setProperty('--bg-card', special.background);
-  document.documentElement.style.setProperty('--bg-hover', colors.color5);
-  document.documentElement.style.setProperty('--fg-main', special.foreground);
-  document.documentElement.style.setProperty('--fg-hover', colors.color0);
+  body.classList.add('themed');
+
+  [colors, special].forEach(colorType => {
+    for (const [color, value] of Object.entries(colorType))
+      document.documentElement.style.setProperty(`--${color}`, value);
+  });
 };
 
 const dropdownData = [
