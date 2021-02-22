@@ -1,4 +1,4 @@
-# **[WIP]** /r/startpages × /r/unixporn
+# **[WIP startpage w/ unix-style color schemes](https://start.pazmi.no)** 
 
 ## Source material/inspiration
 
